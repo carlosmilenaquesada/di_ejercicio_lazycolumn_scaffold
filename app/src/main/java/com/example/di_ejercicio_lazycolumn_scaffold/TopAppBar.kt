@@ -33,39 +33,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import kotlinx.coroutines.launch
 
-@OptIn(ExperimentalMaterial3Api::class)
+
 @Composable
 fun ScaffoldTopApp() {
-    val snackbarHostState = remember {
-        SnackbarHostState()
-    }
-    val coroutineScope = rememberCoroutineScope()
 
-    val drawerState = rememberDrawerState(initialValue = DrawerValue.Closed)
-    val scope = rememberCoroutineScope()
 
-    ModalDrawer(drawerState = drawerState) {
-        Scaffold(
-            snackbarHost = { SnackbarHost(hostState = snackbarHostState) },
-            topBar = {
-                TopAppBar01(onClickIcon = {
-                    coroutineScope.launch {
-                        snackbarHostState.showSnackbar("$it")
-                    }
-                }, onClickDrawer = { scope.launch { drawerState.open() } })
-            },
-            bottomBar = { NavigationBar01() },
-            floatingActionButton = { FloatingActionButton01() },
-            floatingActionButtonPosition = FabPosition.End
-        ) { contentPadding ->
-            Box(
-                modifier = Modifier
-                    .padding(contentPadding)
-            ) {
-                RecyclerView("Todas")
-            }
-        }
-    }
+    ModalDrawer()
 }
 
 @Composable

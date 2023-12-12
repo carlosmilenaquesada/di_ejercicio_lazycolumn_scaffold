@@ -12,19 +12,15 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 @Composable
-fun RecyclerView(plataformaElegida: String) {
+fun RecyclerView(plataforma: String) {
     val context = LocalContext.current
     LazyVerticalGrid(columns = GridCells.Fixed(3), Modifier.background(Color(0xFF6200EE)))
     {
         items(getJuegos()) {
-
-            ItemJuego(juego = it) {
-                Toast.makeText(context, it.toString(), Toast.LENGTH_LONG).show()
+        if(plataforma.equals("Todas") || it.plataforma.equals(plataforma))
+            ItemJuego(juego = it) { juego ->
+                Toast.makeText(context, juego.toString(), Toast.LENGTH_LONG).show()
             }
-
-
         }
     }
-
-
 }

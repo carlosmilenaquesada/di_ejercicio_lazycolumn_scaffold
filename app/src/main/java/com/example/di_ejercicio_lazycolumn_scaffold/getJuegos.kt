@@ -1,0 +1,32 @@
+package com.example.di_ejercicio_lazycolumn_scaffold
+fun getJuegos(): List<Juego> {
+    return listOf(
+        Juego("Bayonetta 2", "Nintendo Switch", R.drawable.nintendo_bayonetta2),
+        Juego("Bayonetta 3", "Nintendo Switch", R.drawable.nintendo_bayonetta3),
+        Juego("Capitan Tsubasa", "Nintendo Switch", R.drawable.nintendo_captainstsubasa),
+        Juego("Mario + Rabbids", "Nintendo Switch", R.drawable.nintendo_mariorabbids),
+        Juego("Kindom magestic", "Nintendo Switch", R.drawable.nintendo_kindommagestic),
+        Juego("Mario Strinke", "Nintendo Switch", R.drawable.nintendo_mariostrike),
+        Juego("Moster Hunter Rise", "Nintendo Switch", R.drawable.nintendo_monsterhunterrise),
+        Juego("Pikmin 4", "Nintendo Switch", R.drawable.nintendo_pikmin4),
+        Juego("Mario Tennis", "Nintendo Switch", R.drawable.nintendo_maritennis),
+        Juego("Two Point Campus", "PlayStation 5", R.drawable.playstation_2pointcampus),
+        Juego("Crusader Kings 3", "PlayStation 5", R.drawable.playstation_crusaderkings3),
+        Juego("Fifa 23", "PlayStation 5", R.drawable.playstation_fifa23),
+        Juego("God Of War: Ragnarok", "PlayStation 5", R.drawable.playstation_gowragnarok),
+        Juego("Horizon: Call of the mountain", "PlayStation 5", R.drawable.playstation_horizonmontain),
+        Juego("Minecraft Legend", "PlayStation 5", R.drawable.playstation_minecraftlegends),
+        Juego("NBA 2k23", "PlayStation 5", R.drawable.playstation_nba2k23),
+        Juego("PGA 2k23", "PlayStation 5", R.drawable.playstation_pga2k23),
+        Juego("Stray", "PlayStation 5", R.drawable.playstation_stray),
+        Juego("Age of empire 2", "XBox Series", R.drawable.xbox_ageofempire2),
+        Juego("Crusader kings 3", "XBox Series", R.drawable.xbox_crusader_kings3),
+        Juego("Dying Light 2", "XBox Series", R.drawable.xbox_dyinglight2),
+        Juego("FarCry 6", "XBox Series", R.drawable.xbox_farcry6),
+        Juego("FC 24", "XBox Series", R.drawable.xbox_fc24),
+        Juego("Jurassic World Evolution 2", "XBox Series", R.drawable.xbox_jurassicworldevo2),
+        Juego("NBA 2k23", "XBox Series", R.drawable.xbox_nba2k23),
+        Juego("Resident Evil 4 remake", "XBox Series", R.drawable.xbox_residentevil4),
+        Juego("Riders Republic", "XBox Series", R.drawable.xbox_ridersrepublic),
+    )
+}
